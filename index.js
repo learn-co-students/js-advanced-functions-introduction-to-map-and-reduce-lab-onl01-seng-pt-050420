@@ -48,6 +48,17 @@ return sum
 reduceToTotal()
 
 
-function reduceToAllTrue(sourceArray) {
-    
-}
+function reduceToAllTrue(src) {
+    for (let i = 0; i < src.length; i++ ) {
+      if (!src[i]) return false
+    }
+    return true
+  }
+  
+
+  function reduceToAnyTrue(src) {
+    for (let i = 0; i < src.length; i++ ) {
+      if (src[i]) return true
+    }
+    return false
+  }
