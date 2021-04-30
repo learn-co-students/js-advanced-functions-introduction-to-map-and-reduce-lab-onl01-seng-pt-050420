@@ -1,8 +1,13 @@
+let sourceArray = [1,2,3]
+let startingPoint = 100
+
 function mapToNegativize(sourceArray) {
 
-    const  newArray = sourceArray.map (x => x * -1);
-    
-    return newArray
+  let r = []
+  for (let i = 0; i < sourceArray.length; i++ ) {
+    r.push(-1 * sourceArray[i])  
+  } 
+  return r
 }
 
 mapToNegativize()
@@ -40,7 +45,7 @@ function reduceToTotal(sourceArray, startingPoint) {
 
     let sum = sourceArray.reduce(function (accumulator, currentValue){
     return accumulator + currentValue}, startingPoint)
-
+    
 return sum
 
 }
